@@ -1,6 +1,6 @@
 FROM ubuntu:18.04 AS builder
 
-LABEL author="tiemonl"
+LABEL maintainer="tiemonl"
 
 WORKDIR /opt
 
