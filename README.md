@@ -1,5 +1,19 @@
-## Terraria Server on Docker
+# Terraria Server on Docker
 
+## Usage
+
+```bash
+docker run \
+  --name=terraria \
+  --restart unless-stopped \
+  --detach \
+  -it \
+  -v <host_volume>:/world \
+  -e WORLD=World_Name.wld \
+  -e PASSWORD=password \
+  -p 7777:7777 \
+tiemonl/docker_terraria ./config_creator.sh
+```
 ### ENV variables
 ------
 
