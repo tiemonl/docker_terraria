@@ -32,11 +32,11 @@ ENV MAX_PLAYERS=8 \
     DIFFICULTY=0 \
     WORLD_NAME=Terraria \
     SECURE=1 \
-    LANGUAGE="en/US"
+    LANGUAGE="en-US"
 
 ADD config_creator.sh .
 
 VOLUME ["/world"]
-EXPOSE 7777
+EXPOSE ${PORT}
 
 ENTRYPOINT sh config_creator.sh
