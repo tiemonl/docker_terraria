@@ -58,9 +58,10 @@ Run `docker attach terraria` or `docker attach <name>` replacing <name> if you n
 | WORLD | Load a world and automatically start the server. | `Terraria.wld` | Make sure to include `.wld` at the end of the name |
 | PORT | Set the port number | `7777` | |
 | PASSWORD | Set the server password. |  | |
+| SEED | Sets the world seed when using autocreate |  | |
 | MOTD | Set the message of the day |  | |
 | WORLD_SIZE | Creates a new world if none is found. World size is specified by: 1(small), 2(medium), and 3(large). | `1` | |
-| DIFFICULTY | Sets the difficulty of the world when using autocreate 0(normal), 1(expert) | `0` | |
+| DIFFICULTY | Sets the difficulty of the world when using autocreate 0(classic), 1(expert), 2(master), 3(journey) | `0` | |
 | WORLD_NAME | Sets the name of the world when using autocreate | `Terraria` | |
 | SECURE | Adds addition cheat protection. | `1` | |
 | LANGUAGE | Sets the server language from its language code.  | `en-US` | English = en-US, German = de-DE, Italian = it-IT, French = fr-FR, Spanish = es-ES, Russian = ru-RU, Chinese = zh-Hans, Portuguese = pt-BR, Polish = pl-PL |

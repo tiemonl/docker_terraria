@@ -14,6 +14,12 @@ then
 else
     echo "motd="$MOTD >> serverconfig.txt
 fi
+if [ -z "$SEED" ]
+then
+    echo "#seed=" >> serverconfig.txt 
+else
+    echo "seed="$SEED >> serverconfig.txt
+fi
 echo "worldpath=/world" >> serverconfig.txt
 echo "autocreate="$WORLD_SIZE >> serverconfig.txt
 echo "difficulty="$DIFFICULTY >> serverconfig.txt
