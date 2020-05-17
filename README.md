@@ -21,32 +21,32 @@ Make sure to add any environment variables you might need by using `-e <ENV_NAME
 
 ### Server commands
 
-Run `docker attach terraria` or `docker attach <name>` replacing <name> if you named the container differently. Once attached, type any server commands.
+Run `docker attach terraria` or `docker attach <name>` replacing `<name>` if you named the container differently. Once attached, type any server commands.
   
 | Command | Information |
 | ------- | ----------- |
-| help | Displays a list of commands. |
-| playing | Shows the list of players. This can be used in-game by typing /playing into the chat. |
-| clear | Clear the console window. |
-| exit | Shutdown the server and save. |
-| exit-nosave | Shutdown the server without saving. |
-| save | Save the game world. |
-| kick <player name> | Kicks a player from the server. |
-| ban <player name> | Bans a player from the server. |
-| password | Show password. |
-| password <pass> | Change password. |
-| version | Print version number. |
-| time | Display game time. |
-| port | Print the listening port. |
-| maxplayers | Print the max number of players. |
-| say <message> | Send a message to all players. They will see the message in yellow prefixed with <server></server> in the chat. |
-| motd | Print MOTD. |
-| motd <message> | Change MOTD. |
-| dawn | Change time to dawn (4:30 AM). |
-| noon | Change time to noon (12:00 PM). |
-| dusk | Change time to dusk (7:30 PM). |
-| midnight | Change time to midnight (12:00 AM). |
-| settle | Settle all water. |
+| `help` | Displays a list of commands. |
+| `playing` | Shows the list of players. This can be used in-game by typing /playing into the chat. |
+| `clear` | Clear the console window. |
+| `exit` | Shutdown the server and save. |
+| `exit-nosave` | Shutdown the server without saving. |
+| `save` | Save the game world. |
+| `kick <player name>` | Kicks a player from the server. |
+| `ban <player name>`| Bans a player from the server. |
+| `password` | Show password. |
+| `password <pass>` | Change password. |
+| `version` | Print version number. |
+| `time` | Display game time. |
+| `port` | Print the listening port. |
+| `maxplayers` | Print the max number of players. |
+| `say <message>` | Send a message to all players. They will see the message in yellow prefixed with `<server></server>` in the chat. |
+| `motd` | Print MOTD. |
+| `motd <message>` | Change MOTD. |
+| `dawn` | Change time to dawn (4:30 AM). |
+| `noon` | Change time to noon (12:00 PM). |
+| `dusk` | Change time to dusk (7:30 PM). |
+| `midnight` | Change time to midnight (12:00 AM). |
+| `settle` | Settle all water. |
 
 ### ENV variables
 ------
