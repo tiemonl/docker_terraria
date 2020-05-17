@@ -28,7 +28,7 @@ echo "banlist=banlist.txt" >> serverconfig.txt
 echo "secure="$SECURE >> serverconfig.txt
 echo "language="$LANGUAGE >> serverconfig.txt
 
-echo "#Journey mode config: \n"
+echo "#Journey mode config: \n" >>serverconfig.txt
 
 echo "journeypermission_time_setspeed="$J_TIME_SPEED >> serverconfig.txt
 echo "journeypermission_time_setfrozen="$J_TIME_TOGGLE >> serverconfig.txt
