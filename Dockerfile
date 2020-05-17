@@ -35,7 +35,22 @@ ENV MAX_PLAYERS=8 \
     DIFFICULTY=0 \
     WORLD_NAME=Terraria \
     SECURE=1 \
-    LANGUAGE="en-US"
+    LANGUAGE="en-US" \
+    J_TIME_SPEED=2 \
+    J_TIME_TOGGLE=2 \
+    J_TIME_DAWN=2 \
+    J_TIME_NOON=2 \
+    J_TIME_DUSK=2 \
+    J_TIME_MIDNIGHT=2 \
+    J_GODMODE=2 \
+    J_WEATHER_WIND=2 \
+    J_WEATHER_WIND_TOGGLE=2 \
+    J_WEATHER_RAIN=2 \
+    J_WEATHER_RAIN_TOGGLE=2 \
+    J_PLACEMENT_RANGE=2 \
+    J_DIFFICULTY=2 \
+    J_BIOME=2 \
+    J_SPAWN_RATE=2
 
 ADD config_creator.sh .
 

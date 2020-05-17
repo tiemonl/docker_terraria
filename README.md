@@ -51,9 +51,11 @@ Run `docker attach terraria` or `docker attach <name>` replacing <name> if you n
 ### ENV variables
 ------
 
+##### Server/World config
+
 | ENV Variable | Information | Default | Misc |
 | ------------ | ----------- | ------- | ---- |
-| VERSION | Version of the server to download | `1401` | Other versions: `1333`, `1344`, `1353` |
+| VERSION | Version of the server to download | `1402` | Other versions: `1333`, `1344`, `1353`, `1401` |
 | MAX_PLAYERS | Sets the max number of players allowed on a server.  Value must be between 1 and 255 | `8` | |
 | WORLD | Load a world and automatically start the server. | `Terraria.wld` | Make sure to include `.wld` at the end of the name |
 | PORT | Set the port number | `7777` | |
@@ -65,3 +67,25 @@ Run `docker attach terraria` or `docker attach <name>` replacing <name> if you n
 | WORLD_NAME | Sets the name of the world when using autocreate | `Terraria` | |
 | SECURE | Adds addition cheat protection. | `1` | |
 | LANGUAGE | Sets the server language from its language code.  | `en-US` | English = en-US, German = de-DE, Italian = it-IT, French = fr-FR, Spanish = es-ES, Russian = ru-RU, Chinese = zh-Hans, Portuguese = pt-BR, Polish = pl-PL |
+
+##### Journey mode config
+
+Journey mode power permissions for every individual power. 0: Locked for everyone, 1: Can only be changed by host, 2: Can be changed by everyone
+
+| ENV Variable | Information | Default |
+| ------------ | ----------- | ------- |
+| J_TIME_SPEED | Set time speed | `2` |
+| J_TIME_TOGGLE | Toggle time change | `2` |
+| J_TIME_DAWN | Set time to dawn | `2` |
+| J_TIME_NOON | Set time to noon | `2` |
+| J_TIME_DUSK | Set time to dusk | `2` |
+| J_TIME_MIDNIGHT | Set time to midnight | `2` |
+| J_GODMODE| Enable god mode | `2` |
+| J_WEATHER_WIND | Set wind strength | `2` |
+| J_WEATHER_WIND_TOGGLE | Toggle wind change | `2` |
+| J_WEATHER_RAIN | Set rain strength | `2` |
+| J_WEATHER_RAIN_TOGGLE | Toggle rain change | `2` |
+| J_PLACEMENT_RANGE | Set placement range | `2` |
+| J_DIFFICULTY | Choose difficulty | `2` |
+| J_BIOME | Toggle infection spread | `2` |
+| J_SPAWN_RATE | Set enemy difficulty | `2` |
