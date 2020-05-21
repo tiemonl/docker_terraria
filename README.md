@@ -55,7 +55,7 @@ Run `docker attach terraria` or `docker attach <name>` replacing `<name>` if you
 
 | ENV Variable | Information | Default | Misc |
 | ------------ | ----------- | ------- | ---- |
-| VERSION | Version of the server to download | `1402` | Other versions: `1333`, `1344`, `1353`, `1401` |
+| VERSION | Version of the server to download | `1403` | Other versions: `1333`, `1344`, `1353` |
 | MAX_PLAYERS | Sets the max number of players allowed on a server.  Value must be between 1 and 255 | `8` | |
 | WORLD | Load a world and automatically start the server. | `Terraria.wld` | Make sure to include `.wld` at the end of the name |
 | PORT | Set the port number | `7777` | |
