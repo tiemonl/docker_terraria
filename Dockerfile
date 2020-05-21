@@ -1,7 +1,5 @@
 FROM ubuntu:18.04 AS builder
 
-LABEL maintainer="tiemonl"
-
 WORKDIR /opt
 
 RUN apt-get update && apt-get install -y unzip 
@@ -17,9 +15,9 @@ RUN unzip terraria-server.zip "${VERSION}/Linux/*" \
     && chmod a+x ${VERSION}/Linux/TerrariaServer* \
     && mv ${VERSION}/Linux terraria/
 
-
-
 FROM ubuntu:18.04
+
+LABEL maintainer="tiemonl"
 
 WORKDIR /opt/terraria
 
