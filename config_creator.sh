@@ -27,6 +27,7 @@ echo "worldname="$WORLD_NAME >> serverconfig.txt
 echo "banlist=banlist.txt" >> serverconfig.txt
 echo "secure="$SECURE >> serverconfig.txt
 echo "language="$LANGUAGE >> serverconfig.txt
+echo "slowliquids="$SLOW_LIQUIDS >> serverconfig.txt
 
 echo "#Journey mode config: \n" >>serverconfig.txt
 

@@ -34,6 +34,7 @@ ENV MAX_PLAYERS=8 \
     WORLD_NAME=Terraria \
     SECURE=1 \
     LANGUAGE="en-US" \
+    SLOW_LIQUIDS=0 \
     J_TIME_SPEED=2 \
     J_TIME_TOGGLE=2 \
     J_TIME_DAWN=2 \

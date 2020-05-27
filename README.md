@@ -67,6 +67,7 @@ Run `docker attach terraria` or `docker attach <name>` replacing `<name>` if you
 | WORLD_NAME | Sets the name of the world when using autocreate | `Terraria` | |
 | SECURE | Adds addition cheat protection. | `1` | |
 | LANGUAGE | Sets the server language from its language code.  | `en-US` | English = en-US, German = de-DE, Italian = it-IT, French = fr-FR, Spanish = es-ES, Russian = ru-RU, Chinese = zh-Hans, Portuguese = pt-BR, Polish = pl-PL |
+| SLOW_LIQUIDS | Reduces maximum liquids moving at the same time. If enabled may reduce lags but liquids may take longer to settle. | `0` | |
 
 ##### Journey mode config
 
