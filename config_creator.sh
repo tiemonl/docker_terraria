@@ -28,6 +28,7 @@ echo "banlist=banlist.txt" >> serverconfig.txt
 echo "secure="$SECURE >> serverconfig.txt
 echo "language="$LANGUAGE >> serverconfig.txt
 echo "slowliquids="$SLOW_LIQUIDS >> serverconfig.txt
+echo "worldrollbackstokeep="$ROLLING_BACKUP >> serverconfig.txt
 
 echo "#Journey mode config: \n" >>serverconfig.txt
 

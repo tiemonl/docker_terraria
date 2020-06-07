@@ -4,11 +4,11 @@ WORKDIR /opt
 
 RUN apt-get update && apt-get install -y unzip 
 
-ENV VERSION=1404
+ENV VERSION=1405
 
 # Temporarily commented out until link is resolved in terraria.org
 # ADD http://terraria.org/server/terraria-server-${VERSION}.zip terraria-server.zip
-ADD https://terraria.org/system/dedicated_servers/archives/000/000/038/original/terraria-server-${VERSION}.zip terraria-server.zip
+ADD https://terraria.org/system/dedicated_servers/archives/000/000/039/original/terraria-server-${VERSION}.zip terraria-server.zip
 
 RUN unzip terraria-server.zip "${VERSION}/Linux/*" \
     && chmod -R a+rw ${VERSION}/Linux/* \
@@ -35,6 +35,7 @@ ENV MAX_PLAYERS=8 \
     SECURE=1 \
     LANGUAGE="en-US" \
     SLOW_LIQUIDS=0 \
+    ROLLING_BACKUP=2 \
     J_TIME_SPEED=2 \
     J_TIME_TOGGLE=2 \
     J_TIME_DAWN=2 \

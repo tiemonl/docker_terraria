@@ -55,7 +55,7 @@ Run `docker attach terraria` or `docker attach <name>` replacing `<name>` if you
 
 | ENV Variable | Information | Default | Misc |
 | ------------ | ----------- | ------- | ---- |
-| VERSION | Version of the server to download | `1404` | Other versions: `1333`, `1344`, `1353` |
+| VERSION | Version of the server to download | `1405` | Other versions: `1333`, `1344`, `1353` |
 | MAX_PLAYERS | Sets the max number of players allowed on a server.  Value must be between 1 and 255 | `8` | |
 | WORLD | Load a world and automatically start the server. | `Terraria.wld` | Make sure to include `.wld` at the end of the name |
 | PORT | Set the port number | `7777` | |
@@ -66,6 +66,7 @@ Run `docker attach terraria` or `docker attach <name>` replacing `<name>` if you
 | DIFFICULTY | Sets the difficulty of the world when using autocreate 0(classic), 1(expert), 2(master), 3(journey) | `0` | |
 | WORLD_NAME | Sets the name of the world when using autocreate | `Terraria` | |
 | SECURE | Adds addition cheat protection. | `1` | |
+| ROLLING_BACKUP | Sets the number of rolling world backups to keep | `2` | Maximum value of `9` |
 | LANGUAGE | Sets the server language from its language code.  | `en-US` | English = en-US, German = de-DE, Italian = it-IT, French = fr-FR, Spanish = es-ES, Russian = ru-RU, Chinese = zh-Hans, Portuguese = pt-BR, Polish = pl-PL |
 | SLOW_LIQUIDS | Reduces maximum liquids moving at the same time. If enabled may reduce lags but liquids may take longer to settle. | `0` | |
 
