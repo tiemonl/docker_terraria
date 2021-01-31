@@ -4,7 +4,7 @@ WORKDIR /opt
 
 RUN apt-get update && apt-get install -y unzip 
 
-ENV VERSION=1410
+ENV VERSION=1412
 
 # Temporarily commented out until link is resolved in terraria.org
 # ADD http://terraria.org/server/terraria-server-${VERSION}.zip terraria-server.zip
