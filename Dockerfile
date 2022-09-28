@@ -4,18 +4,16 @@ WORKDIR /opt
 
 RUN apt-get update && apt-get install -y unzip 
 
-ENV VERSION=1412
+ENV VERSION=1441-fixed
 
-# Temporarily commented out until link is resolved in terraria.org
-# ADD http://terraria.org/server/terraria-server-${VERSION}.zip terraria-server.zip
-ADD https://terraria.org/system/dedicated_servers/archives/000/000/042/original/terraria-server-${VERSION}.zip terraria-server.zip
+ADD https://terraria.org/api/download/pc-dedicated-server/terraria-server-${VERSION}.zip
 
 RUN unzip terraria-server.zip "${VERSION}/Linux/*" \
     && chmod -R a+rw ${VERSION}/Linux/* \
     && chmod a+x ${VERSION}/Linux/TerrariaServer* \
     && mv ${VERSION}/Linux terraria/
 
-FROM ubuntu:18.04
+FROM alpine:18.04
 
 LABEL maintainer="tiemonl"
 
